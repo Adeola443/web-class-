@@ -1,0 +1,97 @@
+    /* ── Page background ── */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1a1a2e;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ── Calculator shell ── */
+    .calculator {
+      background-color: #16213e;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      width: 300px;
+    }
+
+    /* ── Display screen ── */
+    .display {
+      background-color: #0f3460;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 20px;
+      text-align: right;
+    }
+
+    .display input {
+      width: 100%;
+      background: none;
+      border: none;
+      color: #e0e0e0;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: right;
+      outline: none;
+      cursor: default;
+      box-sizing: border-box;
+    }
+
+    /* ── Button grid ── */
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    /* ── Base button style ── */
+    .btn {
+      padding: 18px 10px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.1s, opacity 0.1s;
+    }
+
+    .btn:active {
+      transform: scale(0.93);
+      opacity: 0.85;
+    }
+
+    /* Number buttons */
+    .btn-num {
+      background-color: #1a1a2e;
+      color: #ffffff;
+    }
+
+    /* Operator buttons */
+    .btn-op {
+      background-color: #0f3460;
+      color: #e94560;
+    }
+
+    /* Equals button */
+    .btn-eq {
+      background-color: #e94560;
+      color: #ffffff;
+      grid-column: span 2;
+    }
+
+    /* Clear / Delete buttons */
+    .btn-util {
+      background-color: #533483;
+      color: #ffffff;
+    }
+
+    /* Zero spans 2 columns */
+    .btn-zero {
+      background-color: #1a1a2e;
+      color: #ffffff;
+      grid-column: span 2;
+    }
+  

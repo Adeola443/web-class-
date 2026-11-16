@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.table {
+    width: 400px;
+    height: 400px;
+}
+
+body {
+background-color: darksalmon;
+}
+
+
+
+.form 
+{background-color:palevioletred;
+width: 300px;
+padding: 20px;
+margin: auto;
+border-radius: 12;
+}
+
+form h2 {color: indigo; font-size: 50px;}
+
+
+h2 
+{text-align: center;
+    font-style: italic; 
+    color: darkred; 
+    font-size: 50px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;}
